@@ -2,21 +2,21 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <meta name="description" content="Uni-Embodied: Towards Unified Evaluation for Embodied Planning, Perception, and Execution">
-  <meta property="og:title" content="Uni-Embodied"/>
-  <meta property="og:description" content="A benchmark for unified evaluation of planning, perception, and execution in embodied intelligence"/>
-  <meta property="og:url" content="https://github.com/linglingxiansen/Uni-Embodied.github.io"/>
+  <meta name="description" content="Video-CoT: A Comprehensive Dataset for Spatiotemporal Understanding of Videos Based on Chain-of-Thought">
+  <meta property="og:title" content="Video-CoT"/>
+  <meta property="og:description" content="A Comprehensive Dataset for Spatiotemporal Understanding of Videos Based on Chain-of-Thought"/>
+  <meta property="og:url" content="https://github.com/Video-CoT/video-cot.github.io"/>
   <meta property="og:image" content="static/image/your_banner_image.png" />
   <meta property="og:image:width" content="1200"/>
   <meta property="og:image:height" content="630"/>
-  <meta name="twitter:title" content="Uni-Embodied">
-  <meta name="twitter:description" content="Benchmarking VLMs for unified embodied intelligence">
+  <meta name="twitter:title" content="Video-CoT">
+  <meta name="twitter:description" content="A Comprehensive Dataset for Spatiotemporal Understanding of Videos Based on Chain-of-Thought">
   <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="keywords" content="Embodied AI, VLM, Benchmark, Planning, Perception, Execution">
+  <meta name="keywords" content="Video Understanding, Spatiotemporal Alignment, Multimedia">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Uni-Embodied: Towards Unified Evaluation for Embodied Planning, Perception, and Execution</title>
+  <title>Video-CoT: A Comprehensive Dataset for Spatiotemporal Understanding of Videos Based on Chain-of-Thought</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
   <link rel="stylesheet" href="static/css/bulma.min.css">
@@ -39,9 +39,9 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">Uni-Embodied: Towards Unified Evaluation for Embodied Planning, Perception, and Execution</h1>
+          <h1 class="title is-1 publication-title">Video-CoT: A Comprehensive Dataset for Spatiotemporal Understanding of Videos Based on Chain-of-Thought</h1>
           <div class="is-size-5 publication-authors">
-            <span class="author-block">Lingfeng Zhang, Yingbo Tang, Xinyu Zheng, Qiang Zhang, Yu Liu, Renjing Xu, Xiaoshuai Hao</span>
+            <span class="author-block">Shuyi Zhang, Xiaoshuai Hao, Yingbo Tang, Lingfeng Zhang, Pengwei Wang, Zhongyuan Wang, Hongxuan Ma, Shanghang Zhang</span>
           </div>
           <div class="is-size-5 publication-authors">
             <span class="author-block">Affiliation TBD<br>Conference Name and Year</span>
@@ -59,7 +59,7 @@
                 </a>
               </span>
               <span class="link-block">
-                <a href="https://github.com/CRH380-CR400/uni-embodied" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                <a href="https://github.com/CRH380-CR400/Video-CoT" target="_blank" class="external-link button is-normal is-rounded is-dark">
                   <span class="icon"><i class="fab fa-github"></i></span><span>Code</span>
                 </a>
               </span>
@@ -84,16 +84,13 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Embodied intelligence is a core challenge in the pursuit of artificial general intelligence (AGI), requiring the seamless integration of <strong>planning, perception, and execution</strong> to enable agents to perform physical tasks effectively. While recent vision-language models (VLMs) have shown strong performance in isolated capabilities, their ability to jointly exhibit all three embodied skills remains unclear, impeding the development of unified embodied systems.
+            Video content comprehension is essential for various applications, ranging from video analysis to interactive systems. Despite advancements in large-scale vision-language models (VLMs), these models often struggle to capture the nuanced, spatiotemporal details essential for thorough video analysis. 
           </p>
           <p>
-            In this paper, we propose <strong>Uni-Embodied</strong>, the first comprehensive benchmark designed to evaluate VLMs across the three key dimensions of embodied intelligence: planning, perception, and execution. Our benchmark includes nine diverse tasks—ranging from complex and simple embodied planning to trajectory summarization, map understanding, affordance recognition, spatial pointing, manipulation analysis, and execution in both navigation and manipulation contexts.
+            To address this gap, we introduce Video-CoT, a groundbreaking dataset designed to enhance spatiotemporal understanding using Chain-of-Thought (CoT) methodologies. Video-CoT contains 192,000 fine-grained spatiotemporal question-answer pairs and 23,000 high-quality CoT-annotated samples, providing a solid foundation for evaluating spatiotemporal understanding in video comprehension. Additionally, we provide a comprehensive benchmark for assessing these tasks, with each task featuring 750 images and tailored evaluation metrics.
           </p>
           <p>
-            Extensive experiments on leading open-source and closed-source VLMs demonstrate that current models struggle to achieve balanced performance across all three dimensions. Notably, we observe that enhancing planning and perception often compromises execution, while focusing on execution significantly degrades planning and perception capabilities—revealing fundamental limitations in existing approaches.
-          </p>
-          <p>
-            We further explore strategies such as <strong>chain-of-thought prompting</strong> and <strong>hybrid training</strong> to selectively improve specific embodied capabilities. These findings offer valuable insights for the development of more robust and unified embodied intelligence systems, critical for advancing real-world robotic applications.
+            Our extensive experiments reveal that current VLMs face significant challenges in achieving satisfactory performance, highlighting the difficulties of effective spatiotemporal understanding. Overall, the Video-CoT dataset and benchmark open new avenues for research in multimedia understanding and support future innovations in intelligent systems requiring advanced video analysis capabilities. By making these resources publicly available, we aim to encourage further exploration in this critical area. 
           </p>
         </div>
       </div>
