@@ -149,14 +149,14 @@
   </div>
 </section>
 
-<section class="section hero is-small is-light">
+<section class="section hero is-small">
   <div class="hero-body">
-    <div class="container is-max-desktop">
+    <div class="container">
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
           <h2 class="title is-3">Dataset Construction</h2>
           <img src="./static/images/pipeline.png" alt="MY ALT TEXT"/>
-          <h2 class="subtitle has-text-centered">
+          <div class="content has-text-justified">
             Pipeline for constructing the Video-CoT dataset. We first collect video data with dense annotations, and then generate problem-solving thinking processes and answers using Qwen2.5-VL 72B model. After eliminating data with low-accuracy answers and disorganized thinking processes, the remaining data then served as CoT data.
           </h2>
         </div>
@@ -171,9 +171,12 @@
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
           <h2 class="title is-3">Experimental Results</h2>
-          <img src="./static/images/pipeline.png" alt="MY ALT TEXT"/>
+          <img src="./static/images/table1.png" alt="MY ALT TEXT"/>
           <div class="content has-text-justified">
-            Pipeline for constructing the Video-CoT dataset. We first collect video data with dense annotations, and then generate problem-solving thinking processes and answers using Qwen2.5-VL 72B model. After eliminating data with low-accuracy answers and disorganized thinking processes, the remaining data then served as CoT data.
+            Comparison results of various VLMs on nuanced spatiotemporal understanding tasks.
+          <img src="./static/images/table2.png" alt="MY ALT TEXT"/>
+          <div class="content has-text-justified">
+            Ablation experiments on Ans-SFT and CoT-SFT.
           </h2>
         </div>
       </div>
